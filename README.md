@@ -1,3 +1,3 @@
 # PYTHON
 
-Repositório destiano a projetos na linguagem python
+Repositório destinado a projetos na linguagem python
