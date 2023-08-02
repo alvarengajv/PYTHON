@@ -12,28 +12,26 @@ def angulo_relogio(horario):
     horas %= 12
 
     angulo_minutos = (360 / 60) * minutos
-    angulo_horas = (360 / 12) * horas + ((minutos / 60) * (360 / 12))
+    angulo_horas = (360 / 12) * horas
 
     angulo_ponteiros = abs(angulo_horas - angulo_minutos)
 
-    angulo_complementar = 360 - angulo_ponteiros
-
-    menor_angulo_ponteiros = min(360 - angulo_ponteiros, angulo_complementar)
+    menor_angulo_ponteiros = min(360 - angulo_ponteiros, angulo_ponteiros)
 
     return menor_angulo_ponteiros
 
 
 def main():
     while True:
-        horario = input("Digite o horário no formato 'hh:mm' (ou 'f' para encerrar): ")
+        horario = input()
         if horario == 'f':
-            print("Programa encerrado")
+            print("Fim")
             break
 
         else:
             angulo = angulo_relogio(horario)
             if angulo is not None:
-                print(f"O menor ângulo é de {angulo}°")
+                print(f"O menor ângulo é de {angulo:.0f}°")
 
             else:
                 continue
