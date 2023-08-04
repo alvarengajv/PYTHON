@@ -1,12 +1,4 @@
-def is_float(value):
-    try:
-        float(value)
-        return True
-    except ValueError:
-        return False
-
-
-def calcular_troco(valor):
+def calcula_troco(valor):
     total = valor
 
     notas_100 = int(total // 100)
@@ -63,14 +55,15 @@ def calcular_troco(valor):
 
 def main():
     valor = input()
-    if is_float(valor):
+
+    if valor.replace('.', '').isdigit() and valor.count('.') == 1:
         valor = float(valor)
         if valor < 0:
-            print("O valor não pode ser negativo.")
+            print("Input inválido")
         else:
-            calcular_troco(valor)
+            calcula_troco(valor)
     else:
-        print("Input inválido. O valor deve ser numérico e positivo com duas casas decimais.")
+        print("Input inválido")
 
 
 if __name__ == "__main__":
