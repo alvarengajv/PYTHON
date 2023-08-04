@@ -1,4 +1,4 @@
-def angulo_relogio(horario):
+def calcula_angulo(horario):
     horas, minutos = map(int, horario.split(':'))
 
     if len(horario) != 5:
@@ -25,11 +25,11 @@ def main():
     while True:
         horario = input()
         if horario == 'f':
-            print("Fim")
+            print("Fim...")
             break
 
         else:
-            angulo = angulo_relogio(horario)
+            angulo = calcula_angulo(horario)
             if angulo is not None:
                 print(f"O menor ângulo é de {angulo:.0f}°")
 
