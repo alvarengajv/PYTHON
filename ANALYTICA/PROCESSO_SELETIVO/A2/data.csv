@@ -1,4 +1,4 @@
-
+inve,,
 sigla_uf,SUM of inv_col_tratamento,AVERAGE of indice_atendimento_com_coleta_com_tratamento
 AC,"R$841,152,205.26",0.03943636364
 AM,"R$4,305,944,958.78",0.007032258065
@@ -7,7 +7,16 @@ PA,"R$8,602,458,603.50",0.00809375
 RO,"R$2,072,596,814.36",0.02816730769
 RR,"R$576,578,506.60",0.01214666667
 TO,"R$1,602,075,936.43",0.04523478261
-
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
 NORDESTE,,
 sigla_uf,SUM of inv_col_tratamento,AVERAGE of indice_atendimento_com_coleta_com_tratamento
 AL,"R$3,115,972,923.86",0.04071666667
